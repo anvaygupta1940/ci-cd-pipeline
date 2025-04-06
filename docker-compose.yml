@@ -3,8 +3,7 @@ version: '3.8'
 services:
   pipeline:
     build:
-      context: .
-      dockerfile: Dockerfile
+      image: "anvay1gupta/react-app-pipeline:latest"
     ports:
       - "3000:3000"
     command: [ "npm", "start" ]
